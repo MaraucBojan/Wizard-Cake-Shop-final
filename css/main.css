@@ -116,7 +116,6 @@ body {
 main,
 footer,
 .container {
-    max-width: 1200px;
     margin: 0 auto;
 }
 main {
@@ -344,7 +343,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     display: block;
 }
 .footer-logo img {
-    display: none;
+    display: block;
+    max-width: 80px;
 }
 footer ul {
     padding: 0;
@@ -451,10 +451,16 @@ footer ul {
        padding: 60px 0 10px 0;
     }
     footer ul li {
-        display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    font-size: 18px;    
     }
     footer ul a {
         padding: 5px 10px;
+    }
+    footer ul a img {
+        float: left;
     }
 }
 
@@ -481,10 +487,9 @@ footer ul {
     }
     .left, 
     .right {
-        display: inline-block;
-        width: 50%;
-        box-sizing: border-box;
-        float: left;
+    width: 49%; 
+    float: left;
+    padding-left: 45px;
     }
     .about .left {
         padding-right: 40px;
